@@ -27,7 +27,7 @@ myConfig = def
     }
    `additionalKeysP`
     [ ("M-e"   , spawn "thunar")
-    , ("M-S-t" , spawn "deepin-screenshot")
+    , ("M-S-t" , spawn "flameshot gui")
     , ("M-f"   , spawn "firefox")
     , ("M-c"   , spawn "code")
     ]
