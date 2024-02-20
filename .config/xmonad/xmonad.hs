@@ -7,7 +7,6 @@ import XMonad.Hooks.StatusBar.PP
 import XMonad.Util.EZConfig
 import XMonad.Util.Loggers
 import XMonad.Util.SpawnOnce
-import XMonad.Util.Ungrab
 
 main :: IO ()
 main =  xmonad 
