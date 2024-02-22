@@ -1,0 +1,1 @@
+browser "open -g -a 'Google Chrome' %u"
