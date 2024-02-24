@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "current week: $(date -d now +%V)"
