@@ -16,7 +16,7 @@ main =  xmonad
         $ myConfig 
 
 myConfig = def
-    { terminal              = "kitty"
+    { terminal              = "kitty -e tmux"
     , modMask               = mod4Mask
     , borderWidth           = 0
     , normalBorderColor     = "black"
