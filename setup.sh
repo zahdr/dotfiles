@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in newsboat tmux vim ; do
+for i in fish newsboat tmux vim ; do
 	cd $i && ./setup.sh
 	cd ..
 done
