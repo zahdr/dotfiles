@@ -5,6 +5,9 @@ end
 # disable annoying greeting message
 set -g fish_greeting
 
+# key bindings
+bind \cf 'vim "$(fzf)"'
+
 # extend path
 fish_add_path $HOME/bin
 fish_add_path $HOME/scripts
