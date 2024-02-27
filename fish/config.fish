@@ -6,7 +6,7 @@ end
 set -g fish_greeting
 
 # key bindings
-bind \cf 'vim "$(fzf)"'
+bind \cf "source $HOME/scripts/fzfcd; commandline -f repaint"
 
 # extend path
 fish_add_path $HOME/bin
