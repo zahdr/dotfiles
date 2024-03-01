@@ -7,3 +7,4 @@ set sw=4 "set auto indent to 4 spaces
 set ai "enable auto indent set et replace tab with spaces in paste mods"
 set nu "show line numbers 
 set ruler "show cursor position
+set rnu "enable relative line numbers"
