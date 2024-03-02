@@ -19,6 +19,7 @@ export SCRIPTS="$HOME/dotfiles/scripts"
 export ZETTELKASTEN="$HOME/zettelkasten"
 
 # some aliases
+alias vim="nvim"
 alias l="ls -lh"
 alias ll="ls -lah"
 alias reload="source $HOME/.config/fish/config.fish"
