@@ -2,6 +2,7 @@
 
 ! type nvim > /dev/null 2>&1 && echo "nvim not found" && exit 127
 
+mkdir -p "$HOME/.config/nvim"
 
 if [[ ! -L "$HOME/.config/nvim/after" ]]; then
     ln -sf "$PWD/after" "$HOME/.config/nvim/after"
