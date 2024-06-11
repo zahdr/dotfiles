@@ -4,10 +4,3 @@
 
 ln -sf "$PWD/.tmux.conf" "$HOME/.tmux.conf"
 
-# if [ "$(uname)" == "Darwin" ]; then
-# 	ln -sf "$PWD/.tmux.conf" "$HOME/.tmux.config"
-# elif [ "$(uname)" == "Linux" ]; then
-# 	ln -sf "$PWD/.tmux.conf" "$HOME/.tmux.conf"
-# else
-# 	echo "error in linking tmux files"
-# fi
