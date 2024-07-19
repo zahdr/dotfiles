@@ -31,3 +31,8 @@ alias scriptswork="cd $SCRIPTSWORK"
 alias zettelkasten="cd $ZETTELKASTEN"
 alias lg="lazygit"
 alias todo="vim $DOTFILES/todo.md"
+
+# import work related config files
+for config in ~/.config/fish/conf.d/*.fish
+    source $config
+end
