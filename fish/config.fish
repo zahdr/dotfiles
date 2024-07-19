@@ -28,6 +28,7 @@ alias scripts="cd $SCRIPTS"
 alias zettelkasten="cd $ZETTELKASTEN"
 alias lg="lazygit"
 alias todo="vim $DOTFILES/todo.md"
+alias redosetupp="bash $HOME/dotfiles/setup.sh"
 
 # import work related config files
 for config in ~/.config/fish/conf.d/*.fish
