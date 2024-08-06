@@ -191,11 +191,7 @@ bar {
 # -----------------------------------------
 # Custom settings
 # -----------------------------------------
-
-# Remove top borders
-for_window [class="^.*"] border pixel 2
-                          # class                 border  backgr. text    indicator child_border
-for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
+for_window [class="^.*"] border pixel 0
 
 exec_always --no-startup-id feh --bg-fill $HOME/Downloads/wallpaper.png
 exec_always --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144
