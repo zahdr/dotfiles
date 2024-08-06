@@ -12,11 +12,18 @@ general {
 }
 
 order += "disk /"
+order += "memory"
 order += "load"
 order += "tztime local"
 
 disk "/" {
         format = "%avail"
+}
+
+memory {
+        format = "%used"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
 }
 
 load {
