@@ -1,0 +1,16 @@
+#!/bin/bash
+
+FILE="$ZETTELKASTEN/kasten/$1.md"
+
+if [[ "$#" != 1 ]]; then
+    echo "Arguments not equal 1"
+    exit 1
+fi
+
+if [[ -f "$FILE" ]]; then
+    echo "$FILE already exists"
+    exit 1
+fi
+
+echo "# $1" > $FILE
+nvim $FILE
