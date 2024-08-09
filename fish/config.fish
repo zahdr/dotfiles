@@ -17,6 +17,7 @@ fish_add_path /opt/homebrew/bin
 export DOTFILES="$HOME/dotfiles"
 export SCRIPTS="$HOME/dotfiles/scripts"
 export ZETTELKASTEN="$HOME/zettelkasten"
+export KASTEN="$ZETTELKASTEN/kasten"
 
 # some aliases
 alias vim="nvim"
@@ -26,6 +27,7 @@ alias reload="source $HOME/.config/fish/config.fish"
 alias dotfiles="cd $DOTFILES"
 alias scripts="cd $SCRIPTS"
 alias zettelkasten="cd $ZETTELKASTEN"
+alias kasten="cd $KASTEN"
 alias lg="lazygit"
 alias todo="vim $DOTFILES/todo.md"
 alias dosetupp="bash $HOME/dotfiles/setup.sh"
