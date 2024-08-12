@@ -7,7 +7,6 @@ config.color_scheme = "rose-pine"
 config.enable_tab_bar = false
 config.enable_scroll_bar = false
 config.use_resize_increments = true
-config.window_decorations = "NONE"
 config.window_padding = {
   left = 0,
   right = 0,
