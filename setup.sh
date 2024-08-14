@@ -1,21 +1,7 @@
 #!/bin/bash
 
-set -e 
+set -e
 
-if [[ ":$PATH:" != *":$HOME/scripts:"* ]]; then
-	export PATH="$PATH:$HOME/scripts"
-fi
-
-if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
-	export PATH="$PATH:$HOME/bin"
-fi
-
-if [[ ! -L "$HOME/scripts" ]]; then
-    ln -sf "$PWD/scripts" "$HOME/scripts"
-fi
-
-for i in fish i3 newsboat nvim tmux wezterm ; do
-	cd $i && ./setup.sh
-	cd ..
-done
+install-scripts/create-links.sh
+install-scripts/install-fonts.sh
 
