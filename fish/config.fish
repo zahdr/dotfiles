@@ -18,6 +18,7 @@ export DOTFILES="$HOME/dotfiles"
 export SCRIPTS="$HOME/dotfiles/scripts"
 export ZETTELKASTEN="$HOME/zettelkasten"
 export KASTEN="$ZETTELKASTEN/kasten"
+export CUR_TERM=$(ps -ef | grep tmux | head -n 1 | awk '{print $8}')
 
 # some aliases
 alias vim="nvim"
