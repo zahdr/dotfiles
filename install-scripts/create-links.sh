@@ -16,5 +16,5 @@ done
 
 echo ""
 echo "Linking additional directories..."
-ln -sf "$PWD/scripts" "$HOME/scripts"
+ln -sfT "$HOME/dotfiles/scripts" "$HOME/scripts"
 echo "Created and linked $HOME/scripts"
