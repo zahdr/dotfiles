@@ -14,7 +14,7 @@ if [[ ! -L "$HOME/scripts" ]]; then
     ln -sf "$PWD/scripts" "$HOME/scripts"
 fi
 
-for i in fish i3 newsboat nvim tmux wezterm vim ; do
+for i in fish i3 newsboat nvim tmux wezterm ; do
 	cd $i && ./setup.sh
 	cd ..
 done
