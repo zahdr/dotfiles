@@ -7,7 +7,7 @@ echo "--------"
 echo "Trying to install fonts..."
 if [[ "$(uname)" == "Darwin" ]]; then
     echo "Downloading UbuntuMono font..."
-    brew install font-ubuntumono-nerd-font
+    brew install --cask font-ubuntu-mono-nerd-font
 else
     echo "Downloading UbuntuMono font..."
     mkdir -p /tmp/UbuntuMono
