@@ -31,6 +31,7 @@ alias kasten="cd $KASTEN"
 alias lg="lazygit"
 alias todo="vim $DOTFILES/todo.md"
 alias dosetupp="bash $HOME/dotfiles/setup.sh"
+alias secrets="vim $HOME/.config/fish/conf.d/secrets.fish"
 
 # import work related config files
 for config in ~/.config/fish/conf.d/*.fish
