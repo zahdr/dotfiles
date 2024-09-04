@@ -32,6 +32,7 @@ alias lg="lazygit"
 alias todo="vim $DOTFILES/todo.md"
 alias dosetupp="bash $HOME/dotfiles/setup.sh"
 alias secrets="vim $HOME/.config/fish/conf.d/secrets.fish"
+alias refresh="xrandr --output DP-0 --mode 1920x1080 --rate 144"
 
 # import work and secret related config files
 for config in ~/.config/fish/conf.d/*.fish
