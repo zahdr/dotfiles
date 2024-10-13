@@ -12,6 +12,9 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
       'lua_ls',
+      'bashls',
+      'gopls',
+      'pyright',
   },
   handlers = {
     lsp_zero.default_setup,
