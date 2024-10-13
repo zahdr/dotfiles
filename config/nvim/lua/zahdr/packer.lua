@@ -36,16 +36,16 @@ return require('packer').startup(function(use)
           {'hrsh7th/nvim-cmp'},
           {'hrsh7th/cmp-nvim-lsp'},
           {'hrsh7th/cmp-nvim-lua'},
-          {'saadparwaiz1/cmp_luasnip'},
+          --{'saadparwaiz1/cmp_luasnip'},
 
           -- Snippets
-          {'L3MON4D3/LuaSnip'},
-          {'rafamadriz/friendly-snippets'},
+          --{'L3MON4D3/LuaSnip'},
+          --{'rafamadriz/friendly-snippets'},
       }
   }
 
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
-  use("nvim-treesitter/nvim-treesitter-context");
+  --use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-lua/plenary.nvim")
   use("mbbill/undotree")
   use("github/copilot.vim")
