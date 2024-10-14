@@ -12,7 +12,7 @@ else
     echo "Downloading Hack Nerd Font font..."
     mkdir -p /tmp/HackNerdFont
     wget -q https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip -P /tmp/HackNerdFont
-    unzip -oqq /tmp/HackNerdFont/UbuntuMono.zip -d /tmp/HackNerdFont
+    unzip -oqq /tmp/HackNerdFont/Hack.zip -d /tmp/HackNerdFont
     echo "INFO! Need sudo to install fonts"
     sudo mkdir -p /usr/local/share/fonts
     sudo mv /tmp/HackNerdFont/*.ttf /usr/local/share/fonts
