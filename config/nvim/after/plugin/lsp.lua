@@ -28,6 +28,7 @@ require('mason-lspconfig').setup({
       'bashls',
       'gopls',
       'pyright',
+      'yamlls',
   },
   handlers = {
     lsp.default_setup,
