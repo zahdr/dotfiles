@@ -23,6 +23,7 @@ main() {
         "firefox"
         "nvim"
         "docker"
+        "alacritty"
     )
     installRequirementsMac
     for app in "${apps[@]}"; do

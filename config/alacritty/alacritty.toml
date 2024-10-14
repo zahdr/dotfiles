@@ -1,0 +1,19 @@
+import = ["~/.config/alacritty/rose-pine.toml"]
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[window]
+startup_mode = "Maximized"
