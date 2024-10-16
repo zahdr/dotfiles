@@ -29,6 +29,8 @@ require('mason-lspconfig').setup({
       'gopls',
       'pyright',
       'yamlls',
+      'dockerls',
+      'docker_compose_language_service',
   },
   handlers = {
     lsp.default_setup,
