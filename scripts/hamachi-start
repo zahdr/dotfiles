@@ -1,0 +1,4 @@
+#!/bin/bash
+systemctl start logmein-hamachi.service
+Quamachi.pyw
+systemctl stop logmein-hamachi.service
