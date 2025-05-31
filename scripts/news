@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+xdg-open "https://news.ycombinator.com/" &
+xdg-open "https://www.deutschlandfunk.de/nachrichten/wochenueberblick" 
