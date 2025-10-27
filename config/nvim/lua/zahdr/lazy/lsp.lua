@@ -9,8 +9,8 @@ return {
       -- Setup mason
       require("mason").setup()
 
-      -- Setup mason-lspconfig with desired servers
-      require("mason-lspconfig").setup({
+      local mason_lspconfig = require("mason-lspconfig")
+      mason_lspconfig.setup({
         ensure_installed = {
           "lua_ls",
           "bashls",
@@ -19,11 +19,13 @@ return {
           "yamlls",
           "dockerls",
           "docker_compose_language_service",
+          "ts_ls",
         },
       })
 
-      -- Setup individual servers
-      local lspconfig = require("lspconfig")
+      local lsp_defaults = {
+        capabilities = vim.lsp.protocol.make_client_capabilities(),
+      }
 
       local servers = {
         lua_ls = {
@@ -41,13 +43,24 @@ return {
         yamlls = {},
         dockerls = {},
         docker_compose_language_service = {},
+        ts_ls = {},
       }
 
       for server, config in pairs(servers) do
-        lspconfig[server].setup(config)
+        local merged_config = vim.tbl_deep_extend("force", lsp_defaults, config)
+        vim.lsp.config(server, merged_config)
       end
 
-      -- Global LSP diagnostic config
+      mason_lspconfig.setup_handlers = nil
+      mason_lspconfig.get_installed_servers(function(servers)
+        for _, server in ipairs(servers) do
+          local config = vim.lsp.get_config(server)
+          if config then
+            vim.lsp.start(config)
+          end
+        end
+      end)
+
       vim.diagnostic.config({
         virtual_text = true,
         signs = true,
