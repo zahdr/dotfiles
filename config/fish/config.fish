@@ -19,11 +19,13 @@ export SCRIPTS="$HOME/dotfiles/scripts"
 export ZETTELKASTEN="$HOME/zettelkasten"
 export KASTEN="$ZETTELKASTEN/kasten"
 export CUR_TERM=$(ps -ef | grep tmux | head -n 1 | awk '{print $8}')
+export EDITOR="nvim"
 
 # some aliases
 alias vim="nvim"
 alias l="ls -lh"
 alias ll="ls -lah"
+alias k="kubectl"
 alias reload="source $HOME/.config/fish/config.fish"
 alias dotfiles="cd $DOTFILES"
 alias scripts="cd $SCRIPTS"

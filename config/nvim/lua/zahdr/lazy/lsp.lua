@@ -12,14 +12,15 @@ return {
       local mason_lspconfig = require("mason-lspconfig")
       mason_lspconfig.setup({
         ensure_installed = {
-          "lua_ls",
           "bashls",
-          "gopls",
-          "pyright",
-          "yamlls",
-          "dockerls",
           "docker_compose_language_service",
+          "dockerls",
+          "gopls",
+          "helm_ls",
+          "lua_ls",
+          "pyright",
           "ts_ls",
+          "yamlls",
         },
       })
 
@@ -44,6 +45,15 @@ return {
         dockerls = {},
         docker_compose_language_service = {},
         ts_ls = {},
+        helm_ls = {
+            settings = {
+                ["helm-ls"] = {
+                    yamlls = {
+                        path = "yaml-language-server",
+                    },
+                },
+            },
+        },
       }
 
       for server, config in pairs(servers) do
@@ -54,8 +64,7 @@ return {
       mason_lspconfig.setup_handlers = nil
       mason_lspconfig.get_installed_servers(function(servers)
         for _, server in ipairs(servers) do
-          local config = vim.lsp.get_config(server)
-          if config then
+          local config = vim.lsp.get_config(server) if config then
             vim.lsp.start(config)
           end
         end
